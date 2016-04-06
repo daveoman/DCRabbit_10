@@ -2571,7 +2571,7 @@ _dmaeth100_nodebug void dmaeth100_prt_nicreg(_DMAEth100Config * nic)
       temp == 2 	 ? "TxHalf-Full" : "Tx4th Full"
       );
 
-   temp = (nbtcr & 0xC0) >> 6;
+   temp = (nbrcr & 0xC0) >> 6;
    printf("NBRCR  %02X   %s %s %s %s %s %s %s\n",
    	nbrcr,
       temp == 0 	 ? "RxDisabled," :
